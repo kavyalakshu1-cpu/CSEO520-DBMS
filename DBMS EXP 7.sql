@@ -1,0 +1,25 @@
+use college;
+select*from course2;
+alter table course2 add studentno int(10);
+alter table course2 add coursename varchar(10);
+set sql_safe_updates=0;
+update course2 set studentno=('3');
+update course2 set coursename=('cse');
+update course2 set coursename=('math');
+select *from course2;
+select coursedesc,count(studentno) from course2 group by coursedesc;
+use college;
+select*from student3;
+alter table student3 add studentno int(10);
+alter table student3 add coursename varchar(10);
+update student3 set coursename=('python');
+update student3 set studentno=('001');
+update student3 set studentno=('002');
+update student3 set studentno=('003');
+update student3 set studentno=('004');
+select*from student3;
+select studentno, count(coursename)from student3 group by studentno;
+select name,gender,mobileno from student3 order by Regno;
+select*from faculty3;
+select*from faculty3 order by doj;
+

@@ -1,0 +1,28 @@
+use COLLEGE;
+CREATE TABLE  FACULTY3(facno int(10),facname varchar(10),gender char(1),DOB date,DOJ date,mobileno int(10),deptno char(3),resigned char(1)); TABLE
+INSERT INTO FACULTY3 VALUES('1923455','RAJ','M','2005-09-09','2024-02-09','123456734','MFR','Y'),('1923456','RAM','M','2004-09-08','2024-08-06','99876504','HTR','Y'),('1923457','TEJ','M','2005-09-12','1998-09-07','123412345','MTF','Y'),('1923456','ROY','M','2004-09-04','2007-09-01','123452345','MHY','Y');
+SELECT*FROM FACULTY3;
+create table STUDENT3(regno int(10),name varchar(15),gender char(1),DOB date,mobileno int(10),city varchar(10));
+insert into STUDENT3 values('192521090','kamesh','m','2003-03-02','882634745','mtr'),('192435697','kim','m','2005-02-04','987654321','mpr'),('123456789','mad','m','2004-03-09','978654312','nht'),('123546789','lem','m','2004-08-07','890654321','mkr');
+select*from STUDENT3;
+CREATE TABLE COURSE2(courseno varchar(10),coursedesc varchar(20),coursetype varchar(15),semno int(3),hallno varchar(10),facno varchar(15));
+insert into COURSE2 values('CS101','computer 101','mandatory','1','H001','F001'),('CS201','computer 201','mandatory','2','H002','F001'),('MA101','Mathematics 101','mandatory','1','H003','F002'),('MA201','mathematics 101','elective','2','H004','F002');
+select*fROM COURSE2;
+CREATE TABLE DEPARTMENT1(DEPTNO INT(3),DEPTNAME VARCHAR(17),DEPTHEAD VARCHAR(17));
+INSERT INTO DEPARTMENT1 VALUES('1','wind','raj'),('2','war','eir'),('3','cooper','tej'),('4','fanna','lut');
+select*from DEPARTMENT1;
+use COLLEGE;
+select*from STUDENT3;
+UPDATE STUDENT3 SET name='ram' where regno=192435697;
+select*from STUDENT3;
+CREATE TABLE  FACULTY2(facno int(10),facname varchar(10),gender char(1),DOB date,DOJ date,mobileno int(10),deptno char(3),resigned char(1));
+INSERT INTO FACULTY2 VALUES('1923455','RAJ','M','2005-09-09','2024-02-09','123456734','MFR','N'),('1923456','RAM','M','2004-09-08','2024-08-06','99876504','HTR','Y'),('1923457','TEJ','M','2005-09-12','1998-09-07','123412345','MTF','Y'),('1923456','ROY','M','2004-09-04','2007-09-01','123452345','MHY','Y');
+DELETE FROM FACULTY2 WHERE resigned='n';
+select *from faculty2;
+CREATE TABLE  FACULTY3(facno int(10),facname varchar(10),gender char(1),DOB date,DOJ date,mobileno int(10),deptno char(3),resigned char(1),age int(10));
+CREATE TABLE  FACULTY3(facno int(10),facname varchar(10),gender char(1),DOB date,DOJ date,mobileno int(10),deptno char(3),resigned char(1));
+INSERT INTO FACULTY3 VALUES('1923455','RAJ','M','2005-09-09','2024-02-09','123456734','MFR','Y','38'),('1923456','RAM','M','2004-09-08','2024-08-06','99876504','HTR','Y','34'),('1923457','TEJ','M','2005-09-12','1998-09-07','123412345','MTF','Y','43'),('1923456','ROY','M','2004-09-04','2007-09-01','123452345','MHY','Y','53');
+update FACULTY3 set age=38 where facname='raj';
+select*from FACULTY3;
+DELETE FROM FACULTY3 WHERE age=65;
+select*from FACULTY3;

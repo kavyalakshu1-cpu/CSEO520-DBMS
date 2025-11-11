@@ -1,0 +1,12 @@
+create database COLLEGE;
+USE COLLEGE;
+create table STUDENT(regno int(3),name char(10),gender char(1),DOB int(10),mobileno int(10),city char(10));
+create table FACULTY(Facno int(3),facname char(15),gender char(1),DOB int(10),mobileno int(10),DOJ int (10));
+create table DEPARTMENT(deptno int(10),deptname char(10),depthead char(10));
+create table course(courseno int(3),coursedesc varchar(14),coursetype char(1),semno char(1),hallno varchar(4),facno varchar(4));
+desc STUDENT;
+desc FACULTY;
+desc DEPARTMENT;
+desc course;
+alter table FACULTY ADD DEPT VARCHAR(10);
+DESC FACULTY;
